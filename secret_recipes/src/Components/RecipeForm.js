@@ -121,7 +121,8 @@ const FormInputsDiv = styled.div`
 `;
 
 export default function RecipeForm(props) {
-  const { list, setList } = props;
+  const { setList } = props;
+  //deleted list from props for linter
 
   //form state
   const [formValues, setFormValues] = useState(initialFormValues);

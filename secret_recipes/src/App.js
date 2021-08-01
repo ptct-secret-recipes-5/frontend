@@ -5,11 +5,11 @@ import Home from "./Components/Home";
 import RecipeList from "./Components/RecipeList";
 
 //dummy-data for recipe card testing
-import data from "./data";
+// import data from "./data";
 
 //import RecipeForm component
 import RecipeForm from "./Components/RecipeForm";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 
 //import user Sign Up form component
 import SignUpForm from "./Components/UserForm";

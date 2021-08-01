@@ -57,7 +57,7 @@ export default function RecipeList(props) {
             } else return null;
           })
           .map((food, index) => (
-            <Card className="food-list" key = {index}>
+            <Card className="food-list" key={index}>
               <RecipeCard
                 food={food}
                 key={index}
@@ -85,29 +85,29 @@ const Search = styled.input`
 `;
 
 //Styled-Components
-const Text = styled.h1`
-  // border: 1px solid black;
-  position: absolute;
-  margin-top: 17%;
-  animation: fadeIn 2s ease 1 normal;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
+// const Text = styled.h1`
+//   // border: 1px solid black;
+//   position: absolute;
+//   margin-top: 17%;
+//   animation: fadeIn 2s ease 1 normal;
+//   @keyframes fadeIn {
+//     0% {
+//       opacity: 0;
+//     }
 
-    100% {
-      opacity: 1;
-    }
-  }
-  @media (max-width: 625px) {
-    margin-top: 13%;
-    font-size: 45px;
-  }
-`;
-const TextContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+//   @media (max-width: 625px) {
+//     margin-top: 13%;
+//     font-size: 45px;
+//   }
+// `;
+// const TextContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
 
 const Container = styled.div`
   margin-top: 36px;
