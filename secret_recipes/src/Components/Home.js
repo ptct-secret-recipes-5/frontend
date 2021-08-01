@@ -15,14 +15,14 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Card = styled.div`
-  width: 250px;
-  margin: 0 10px 32px;
-  cursor: pointer;
-`;
+// const Card = styled.div`
+//   width: 250px;
+//   margin: 0 10px 32px;
+//   cursor: pointer;
+// `;
 
 function Home(props) {
-  const { homeFood } = props;
+  // const { homeFood } = props;
   return (
     <div>
       <Image className="homeImage" src={home} alt="fancy-food" />

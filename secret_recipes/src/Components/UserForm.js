@@ -4,50 +4,50 @@ import * as yup from "yup";
 import schema from "../validation/userFormSchema";
 
 //import background picture and styled-components
-import signUp from "./signUp.jpg";
+// import signUp from "./signUp.jpg";
 import styled from "styled-components";
 
 //import picture
 import SignUp from "./signUp.jpg";
 
-const OutOfContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+// const OutOfContainer = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
 
-const Container = styled.div`
-  position: absolute;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 30px;
-  margin: 13% 27%;
-  padding: 50px 70px;
-  text-align: center;
-  line-height: 2;
-  animation: fadeIn 2s ease 1 normal;
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
+// const Container = styled.div`
+//   position: absolute;
+//   background: rgba(255, 255, 255, 0.9);
+//   border: 1px solid rgba(255, 255, 255, 0.4);
+//   border-radius: 30px;
+//   margin: 13% 27%;
+//   padding: 50px 70px;
+//   text-align: center;
+//   line-height: 2;
+//   animation: fadeIn 2s ease 1 normal;
+//   @keyframes fadeIn {
+//     0% {
+//       opacity: 0;
+//     }
 
-    100% {
-      opacity: 1;
-    }
-  }
-  @media (max-width: 625px) {
-    border: 1px solid black;
-    background: white;
-    margin: 67% auto;
-    border: 0;
-  }
-`;
+//     100% {
+//       opacity: 1;
+//     }
+//   }
+//   @media (max-width: 625px) {
+//     border: 1px solid black;
+//     background: white;
+//     margin: 67% auto;
+//     border: 0;
+//   }
+// `;
 
-const TextH2 = styled.h2`
-  @media (max-width: 625px) {
-    font-size: 19px;
-    margin-bottom: 4%;
-  }
-`;
+// const TextH2 = styled.h2`
+//   @media (max-width: 625px) {
+//     font-size: 19px;
+//     margin-bottom: 4%;
+//   }
+// `;
 
 //Initial form state
 const initFormValues = {
@@ -131,12 +131,12 @@ const FormInputsDiv = styled.div`
     padding-left: 20%;
     padding-bottom: 1rem;
   }
-  label2 {
+  /* label {
     font-size: 2.5rem;
     font-weight: bold;
     padding-left: 30%;
     padding-bottom: 1rem;
-  }
+  } */
   label input,
   select,
   textarea {
@@ -273,7 +273,7 @@ export default function SignupForm() {
             {/* email text input */}
             <div className="input-div">
               <div className="error-div2">{formErrors.email}</div>
-              <label2 id="email">Email:</label2>
+              <label id="email">Email:</label>
               <input
                 type="text"
                 name="email"
